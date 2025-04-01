@@ -1,0 +1,39 @@
+Arm	washes	RR	IC_low 	IC_high
+CTN_AlphaCypermethrin	0	0.38	0.28	0.52
+Interceptor	0	0.41	0.27	0.61
+CTN_Lambdacyalothrin	0	0.43	0.3	0.62
+DawaPlus1 100den	0	0.48	0.36	0.64
+DawaPlus1	0	0.49	0.36	0.65
+Interceptor	20	0.49	0.33	0.73
+CTN_Deltamethrin	0	0.53	0.44	0.63
+Permanet2	0	0.53	0.43	0.65
+Permanet3	0	0.54	0.44	0.66
+CTN_AlphaCypermethrin 200den	20	0.56	0.38	0.83
+DawaPlus2	0	0.62	0.48	0.8
+CTN_AlphaCypermethrin 200den	exh	0.64	0.44	0.93
+NetProtect	0	0.7	0.5	0.98
+IconMax	0	0.71	0.51	1
+Permanet2	20	0.71	0.59	0.86
+Permanet3	20	0.71	0.58	0.86
+DawaPlus1 100den	20	0.75	0.57	0.97
+DawaPlus2	20	0.77	0.61	0.98
+Lifenet	0	0.78	0.54	1.13
+Lifenet	20	0.78	0.54	1.12
+DawaPlus1	20	0.82	0.68	1
+Permanet2.5	20	0.82	0.65	1.04
+NetProtect	20	0.85	0.61	1.18
+CTN_Lambdacyalothrin	exh	0.86	0.62	1.19
+Duranet	20	0.86	0.59	1.25
+CTN_Deltamethrin	exh	0.91	0.79	1.05
+OlysetPlus	0	0.92	0.61	1.38
+Duranet	0	0.94	0.65	1.37
+Lifenet	30	0.95	0.66	1.36
+CTN_Deltamethrin	20	1	0.7	1.41
+IconMaxNet	0	1.01	0.73	1.4
+CTN_Permethrin	exh	1.05	0.7	1.56
+OlysetNet	0	1.35	0.92	1.97
+OlysetPlus	20	1.36	0.93	1.98
+CTN_AlphaCypermethrin	exh	1.4	0.97	2.02
+IconMaxNet	20	1.57	1.14	2.16
+IconMax	20	1.59	1.15	2.19
+OlysetNet	20	1.7	1.18	2.47
