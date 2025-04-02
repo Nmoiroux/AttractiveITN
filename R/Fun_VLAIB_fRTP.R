@@ -28,6 +28,7 @@
 TP <- function(nsim=1000, S = S_ref, g = g_ref, Du = Du_ref, Dp= Dp_ref,m1u = m1u_ref, m1p = m1p_ref, m2u = m2u_ref, m2p = m2p_ref, 
 									Nh = Nh_ref, Uh = Uh_ref, pi = pi_ref, Pllin = 0.5, k = k_ref, n = n_ref, Ih = Ih_ref){
   
+  ### model of vector Host-Seeking,Feeding and Mortality (HSFM) 
   ## proba of encountering an unprotected or LLIN protected human
   Np <- Uh*pi*Nh                       # average number of people protected by an LLIN - Expression (1)
   Nu <- Nh - Np                        # average number of unprotected people - Expression (2)
@@ -47,7 +48,7 @@ TP <- function(nsim=1000, S = S_ref, g = g_ref, Du = Du_ref, Dp= Dp_ref,m1u = m1
   S2p <- 1 - m2p            # post-bite survival in hut with LLIN protected people - Expression (14)
   
   
-  ### Transition probability from HS (host-seeking) to F (fed) state and from F to HS
+  ## Transition probability from HS (host-seeking) to F (fed) state and from F to HS
   Pd <- Du*Eu + Dp*Ep 			              # Proba that an HS vector will be diverted (to HS next night if it survive) - Expression (15)
   Sd <- S 	  									          # Proba that diverted vector survives to state HS next night - Expression (16)
   Pf_u <- Eu * fi_u								        # Proba that an HS vector will bite successfully (same night) on an unprotected human - Expression (17)
@@ -57,7 +58,7 @@ TP <- function(nsim=1000, S = S_ref, g = g_ref, Du = Du_ref, Dp= Dp_ref,m1u = m1
   Sf <- (S2u * F_u + (1-F_u)*S2p) * S^g		# Proba survives from successful bite to HS at next G cycle - Expression (21)
   
   
-  ### model average lifetime infectious bites
+  ### model de transmission: average lifetime infectious bites (Glunt et al.)
   
   PfA <- Pf/(1-Pd*Sd)									  # Average proba that a HS vector will survive to take a feed - Expression (22)
   BA <- PfA/(1-Sf*PfA)							  	# Average number of bites which a HS vector will survive to give - Expression (23)
