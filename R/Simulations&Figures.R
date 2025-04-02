@@ -11,7 +11,7 @@ insertSource("R/my_ggarrange.R", package = "ggpubr") # customized ggpubr::ggarra
 
 # Variables common to all analysis ----
 ## common value for Fig 2-5
-y_title <- "Change in transmission\n potential (%)"
+y_title <- "Change in transmission\n potential (%)" # title for y axis
 FUN <- TP                # function used to calculate transmission potential
 ## legends titles and labels
 legend_title <- "ITN: "
