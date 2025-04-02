@@ -115,7 +115,7 @@ TP <- function(nsim=1000, S = S_ref, g = g_ref, Du = Du_ref, Dp= Dp_ref,m1u = m1
 #' @param Uh2 Uh at baseline 
 #' @param pi pi: proportion of exposure to bite that occurs during which LLIN is in use 
 #' @param pi2 pi at baseline 
-#' @param FUN the function used to calculate TP in both scenarii, the average number of infectious bites that a vector gives according to a behavior and mortality model (default=TP)
+#' @param FUN the function used to calculate TP in both scenarios, the average number of infectious bites that a vector gives according to a behavior and mortality model (default=TP)
 #'
 #' @return the value of Relative transmission potential (RTP)
 #' @export
