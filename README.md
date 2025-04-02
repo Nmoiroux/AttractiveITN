@@ -5,13 +5,14 @@
 <!-- badges: end -->
 ### Overview
 This repository contains the code and data necessary to reproduce the analyses presented in our study entitled
-_The modelled potential of attractive insecticide-treated nets (ITNs) to reduce malaria transmission_
+_Potential of attractive insecticide-treated nets (ITNs) to reduce malaria transmission: a modeling study_
 
 ### Repository Structure
 
 - **R/**: Contains R scripts for data analysis and model simulations.
-    - 'Simulations&Figure.R' helps reproduce all simulations, figures 2 to 5, and supplementary figures.
-    - 'Uncertainty&Sensitivity.R' helps reproduce sensitivity analyses and figure 6.
+    - 'Simulations&Figure.R' helps reproduce simulations made for Figures 2 to 5, as well as for Supplementary figures 1 & 2.
+    - 'Uncertainty&Sensitivity.R' helps reproduce sensitivity analyses and Figure 6.
+    - 'Simulations_vs_NoNets.R' helps reproduce simulation made for Supplementary figure 3.
     - 'Fun_VLAIB_fRTP.R' contains R functions of the model
     - 'Set_parameters.R' contains codes to set parameters values based on literature and field data 
     - 'my_ggarrange.R' contains a customized ggpubr::ggarrange function that allow to use the legend of any of the arranged plots as a common legend.
