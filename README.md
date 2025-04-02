@@ -8,7 +8,7 @@ This repository contains the supplementary materials, as well as codes and data 
 _Potential of attractive insecticide-treated nets (ITNs) to reduce malaria transmission: a modeling study_
 
 ### Repository Structure
-- 'Supplementary materials (Figures).pdf'
+- 'Supplementary materials (Figures).pdf' contains supplementary figures 1, 2 & 3.
 - **R/**: Contains R scripts for data analysis and model simulations.
     - 'Simulations&Figure.R' helps reproduce simulations made for Figures 2 to 5, as well as for Supplementary figures 1 & 2.
     - 'Uncertainty&Sensitivity.R' helps reproduce sensitivity analyses and Figure 6.
@@ -26,5 +26,5 @@ _Potential of attractive insecticide-treated nets (ITNs) to reduce malaria trans
 If you use this code or data in your research, please cite our study as follows:
 
 ```
-Moiroux Nicolas & Pennetier Cédric. (2025). Potential of attractive insecticide-treated nets (ITNs) to reduce malaria transmission: a modeling study. 
+Moiroux Nicolas & Pennetier Cédric. (2025). Potential of attractive insecticide-treated nets (ITNs) to reduce malaria transmission: a modeling study. doi.
 ```
