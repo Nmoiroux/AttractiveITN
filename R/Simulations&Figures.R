@@ -21,7 +21,7 @@ leg_label_B <- c("inert (*p~ITN~* = 0.5)","attractive (*p~ITN~* = 0.6)","attract
 
 #### Effect of ITN use (Figure 2) ----
 # common parameters to panels A & B (Figure 2)
-use <- seq(0,1,by = 0.01)	  # use ITN values used for simulations
+use <- seq(0,1,by = 0.01)	  # ITN use to simulate
 
 # panel A
 p<- c(0.6,0.7)		      # preference for ITN protected human (against unprotected human) 
@@ -178,7 +178,7 @@ fig4_A <- ggplot(RTP.fit, aes(x=d.*100, y=redVC)) +
 
 # panel B
 p<- c(0.5,0.6,0.7)		      # preference for ITN protected human (against unprotected human) 
-ref_pref <- pLLIN_ref_det		# preference value of the reference ITN (detterent = 0.36)
+ref_pref <- pLLIN_ref_det		# preference value of the reference ITN (deterent = 0.36)
 
 RTP.fit <- expand.grid(p.=p,d.=d)   # create table of all combinations of p and d
 RTP.fit <- mutate(RTP.fit, z = pmap_dbl(list(d.,p.),~fRTP(p=.y, D=.x, D2=.x, p2=ref_pref,FUN= FUN))) # calculate TP ratio
