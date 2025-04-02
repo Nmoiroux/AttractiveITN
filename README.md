@@ -4,7 +4,7 @@
 <!-- badges: start -->
 <!-- badges: end -->
 ### Overview
-This repository contains the code and data necessary to reproduce the analyses presented in our study entitled
+This repository contains the codes and data necessary to reproduce the analyses presented in our study entitled
 _Potential of attractive insecticide-treated nets (ITNs) to reduce malaria transmission: a modeling study_
 
 ### Repository Structure
@@ -26,5 +26,5 @@ _Potential of attractive insecticide-treated nets (ITNs) to reduce malaria trans
 If you use this code or data in your research, please cite our study as follows:
 
 ```
-Author(s). (Year). Title of the study. Journal Name. DOI or URL
+Moiroux Nicolas & Pennetier Cédric. (2025). Potential of attractive insecticide-treated nets (ITNs) to reduce malaria transmission: a modeling study. 
 ```
