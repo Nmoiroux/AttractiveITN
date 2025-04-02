@@ -4,11 +4,11 @@
 <!-- badges: start -->
 <!-- badges: end -->
 ### Overview
-This repository contains the codes and data necessary to reproduce the analyses presented in our study entitled
+This repository contains the supplementary materials, as well as codes and data necessary to reproduce the analyses presented in our study entitled
 _Potential of attractive insecticide-treated nets (ITNs) to reduce malaria transmission: a modeling study_
 
 ### Repository Structure
-
+- 'Supplementary materials (Figures).pdf'
 - **R/**: Contains R scripts for data analysis and model simulations.
     - 'Simulations&Figure.R' helps reproduce simulations made for Figures 2 to 5, as well as for Supplementary figures 1 & 2.
     - 'Uncertainty&Sensitivity.R' helps reproduce sensitivity analyses and Figure 6.
