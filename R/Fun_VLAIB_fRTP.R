@@ -12,7 +12,7 @@
 #' @param Nh Number of humans in the community 
 #' @param Uh proportion of humans that use LLINs 
 #' @param pi proportion of exposure to bite that occurs during which LLIN is in use 
-#' @param Pllin preference for LLIN protected human (against uprotected human) as recorded in a dual choice olfactometer (default = 0.5, i.e inert LLIN)
+#' @param Pllin preference for LLIN protected human (against unprotected human) as recorded in a dual choice olfactometer (default = 0.5, i.e inert LLIN)
 #' @param k infectiousness: probability that a vector become infected (exposed) while taking a blood meal on an infectious host 
 #' @param n duration of extrinsic incubation period of the parasite (in days, positive integer)
 #' @param Ih Plasmodium falciparum prevalence rate in the human population
