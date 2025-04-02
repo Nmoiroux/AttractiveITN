@@ -1,6 +1,6 @@
 #' `TP` return the transmission potential (average number of infectious bites that a vector gives according to a behavior and mortality model)
 #'
-#' @param nsim unused but required argument, for compatibility / comparison with other function (ex: VLAIB_IBM)
+#' @param nsim unused but required argument, for compatibility / comparison with other functions
 #' @param S baseline survival rate
 #' @param g duration of gonotrophic cycle (positive integer)
 #' @param Du Diversion probability when entering a hut without LLIN 
