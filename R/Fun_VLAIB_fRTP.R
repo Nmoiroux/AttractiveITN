@@ -65,9 +65,8 @@ TP <- function(nsim=1000, S = S_ref, g = g_ref, Du = Du_ref, Dp= Dp_ref,m1u = m1
   c <- k * Ih          		              # probability that a vector become infected while taking a blood meal -  Expression (24)
   Pl <- PfA*c/(1-PfA*Sf*(1-c))					# Probability that a vector will acquire Pf during its lifetime - Expression (25)
   
-  # Expression (35)
-
-  move <- function(i, g, n){				# this function return 1 if the duration of the combination equals the duration to become infectious (n)
+  # expression (26): (i is the number of diversions, g the number of gonotrophic cycles, and n is the duration of sporogony)
+  if_sporo <- function(i, g, n){				# this function return 1 if the duration of the combination equals the duration to become infectious (n)
     if ((ceiling((n-g-i)/g)*g+i)==(n-g)){
       return (1)
     } else {
@@ -75,21 +74,22 @@ TP <- function(nsim=1000, S = S_ref, g = g_ref, Du = Du_ref, Dp= Dp_ref,m1u = m1
     }
   }
   
-  Term1 <- NULL
+  Term1 <- NULL # we divide expression (26) in three different expressions
   Term2 <- NULL
   Term3 <- NULL
 
-  for (i in 0:(n-g)){
-    Ng <- ceiling((n-g-i)/g)      # number of gonotrophic cycles required to complete sporogony (giving i diversion events)
-    Ng2 <- ceiling((n-2*g-i)/g)   # number of gonotrophic cycles required to complete sporogony (giving i diversion events and the combination finshes by a g)
+  for (i in 0:(n-g)){             # for every possible number of diversions
+    Ng <- ceiling((n-g-i)/g)      # number of gonotrophic cycles required to complete sporogony
+    Ng2 <- ceiling((n-2*g-i)/g)   # number of gonotrophic cycles required to complete sporogony if the combination ended by a g.
     Term1[i+1] <- ((Pf*Sf)^Ng) * ((Pd*Sd)^i)    # proba to survive the combination of i and g
-    Term2[i+1] <- i+Ng2+move(i,g,n)     	      # n in the binomial coefficient (total number of element)
+    Term2[i+1] <- i+Ng2+if_sporo(i,g,n)     	  # upper number in the binomial coefficient (total number of element)
     Term3[i+1] <- factorial(Term2[i+1]) / (factorial(Term2[i+1]-i)*factorial(i))	# Binomial coefficient : nb of possible order of each combination (with 0 to n-g diversions events)
   }
   
   Term4 <- Term1*Term3	       # Term3 gives the number of possible orders for each combination of (i) diversions and ((n-g-i)/g) feeds
   Sl <- Sf * sum(Term4)				 # Proba that a newly infected vector will survive to HS state as an infectious vector - Expression (26)
   
+  # transmisssion potential
   TP = Pl*Sl*BA						 # Vector average lifetime infectious bites (= individual Vector capacity) - Expression (27)
   
   ### number of oviposition events - can be used as a fitness indicators in a genetic/evolution model - Expression (30)
