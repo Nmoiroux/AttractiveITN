@@ -103,7 +103,7 @@ TP <- function(nsim=1000, S = S_ref, g = g_ref, Du = Du_ref, Dp= Dp_ref,m1u = m1
 
 # function to calculate RTP (Relative transmission potential)
 #' `fRTP` return the relative transmission potential of a scenario against another taken as baseline. It is the ratio of TP
-#' between two scenarii. It can use various model that are given as `FUN` argument
+#' between two scenarios. It can use various model that are given as `FUN` argument
 #'
 #' @param nsim number of simulation (used when FUN is model that used simulation)
 #' @param m m1p: pre-bite feeding related mortality probability when faced to un LLIN protected host
