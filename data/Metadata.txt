@@ -1,0 +1,29 @@
+File_name: Data_Figure2_Moiroux.txt
+Source: Figure 2A & 2B in Moiroux et al. 2017 doi:10.1371/journal.pone.0170732
+Description: Deterence of ITNs expressed as rate-ratios of entry rates 
+Fields:
+Arm; ITN identifier  (see Table 1 in Moiroux et al. 2017 doi:10.1371/journal.pone.0170732)	
+washes; 0 or 20 indicated the number of standard washing, exh. indicates whashed until exhaustion	
+RR; Rate Ratios (with the control untreated net as reference) as obtained with Negative Binomial mixed effect models of daily counts of Anopheles entered the huts
+IC_low; 95% Confidence interval of RR, lower bound  	
+IC_high; 95% Confidence interval of RR, upper bound  
+
+File_name: Data_Moiroux.txt
+Source: data used in Moiroux et al. 2017 doi:10.1371/journal.pone.0170732
+Description: Raw data of 10 WHOPES supervised Experimental Hut Trials involving 13 ITNs 
+Fields:
+Place; Experimental hut station (Kou Valley, Burkina Faso or Malanville, Benin)
+Eval; Trial identifier (see Table 1 in Moiroux et al. 2017 doi:10.1371/journal.pone.0170732)
+ttmt; treatment identifier (see Table 1 in Moiroux et al. 2017 doi:10.1371/journal.pone.0170732)
+wash; 0 or 20 indicated the number of standard washing, exh. indicates whashed until exhaustion
+ITN; Type of ITN: no=control untreated net, CTN: conventionnaly treated net, ITN: Long-Lastin insecticidal treated net
+total; total number of collected Anopheles	
+Total_bfed; number blood fed	
+Total_dead; number dead
+Tot_L_unfd; number alive unfed	
+Tot_L_fed; number alive fed	
+Tot_D_unfd; number dead unfed		
+Tot_D_fed; number dead fed	
+Total_unfd; number unfed
+
+
