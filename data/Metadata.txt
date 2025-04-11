@@ -26,4 +26,19 @@ Tot_D_unfd; number dead unfed
 Tot_D_fed; number dead fed	
 Total_unfd; number unfed
 
-
+File_name: Data_Strode.txt
+Source: Table 12 in Strode et al. 2014 10.1371/journal.pmed.1001619
+Description: Fifty-five deterrence data from Experimental hut trials
+Fields:
+Studies; study identifier	
+reference; study reference in Strode et al. 2014 10.1371/journal.pmed.1001619
+Intervention; Type of ITN tested: CTN: conventionnaly treated net, LLIN: Long-Lastin insecticidal treated net
+Net; Name of the LLIN or insecticide used for CTN	
+TotalITN; total number of Anopheles collected in the treated hut
+TotalUTN; total number of Anopheles collected in the untreated control hut
+Deterrence; calculated deterrence value	
+Events_ITN; unused
+TotalITN; unused	
+Events_UTN; unused	
+TotalUTN; unused	
+BFI; unused
