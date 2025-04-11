@@ -27,5 +27,5 @@ _Potential of attractive insecticide-treated nets (ITNs) to reduce malaria trans
 If you use this code or data in your research, please cite our study as follows:
 
 ```
-Moiroux Nicolas & Pennetier Cédric. (2025). Potential of attractive insecticide-treated nets (ITNs) to reduce malaria transmission: a modeling study. doi.
+Moiroux, Nicolas, and Cédric Pennetier. ‘The Potential of Attractive Insecticide-Treated Nets (ITNs) in Reducing Malaria Transmission: A Modeling Study’. medRxiv 2025. https://doi.org/10.1101/2025.04.02.25325102.
 ```
