@@ -37,6 +37,7 @@ fig2_A <- ggplot(RTP.fit, aes(x=use.*100, y=redVC)) +
 	geom_line(aes(linetype=as.factor(p.))) +
 	scale_linetype_manual(values=c(2,3),name=legend_title, labels=leg_label_A)+
 	xlim(0,100) + ylim(-100,0)+
+  annotate("text", x=50, y=-85, label="Compared to inert ITNs", size=3) +
 	theme(aspect.ratio=1) +
 	theme(axis.title.y = element_blank())+
 	theme(axis.title.x = element_blank())+
@@ -55,6 +56,7 @@ fig2_B <- ggplot(RTP.fit, aes(x=use.*100, y=redVC)) +
 	geom_line(aes(linetype=as.factor(p.))) +
 	scale_linetype_manual(values=c(1,2,3),name=legend_title, labels=leg_label_B)+
 	xlim(0,100) + ylim(-100,0)+
+  annotate("text", x=50, y=-85, label="Compared to deterrent ITNs", size=3) +
 	theme(aspect.ratio=1) +
 	theme(axis.title.y = element_blank())+
 	theme(axis.title.x = element_blank())+
@@ -104,12 +106,13 @@ fig3_A <- ggplot(RTP.fit, aes(x=(1-m.)*100, y=redVC)) +
 	xlab("Feeding attempt survival (%)") + 
 	geom_line(aes(linetype=as.factor(p.))) +
 	scale_linetype_manual(values=c(2,3),name=legend_title)+
-	xlim(0,100) + ylim(-100,0)+
+	xlim(0,100) + ylim(-100,0) +
 	theme(aspect.ratio=1) +
 	theme(axis.title.y = element_blank())+
 	theme(axis.title.x = element_blank())+
 	theme(legend.text = element_markdown())+
-	geom_rect(aes(xmin = (1-m1p_rg$min)*100, xmax = 100, ymin = -100, ymax = 0), fill="white", alpha = 0.008)
+	geom_rect(aes(xmin = (1-m1p_rg$min)*100, xmax = 100, ymin = -100, ymax = 0), fill="white", alpha = 0.008)+
+  annotate("text", x=50, y=-85, label="Compared to inert ITNs", size=3)
 
 
 # panel B
@@ -129,7 +132,8 @@ fig3_B <- ggplot(RTP.fit, aes(x=(1-m.)*100, y=redVC)) +
 	theme(axis.title.y = element_blank())+
 	theme(axis.title.x = element_blank())+
 	theme(legend.text = element_markdown())+
-	geom_rect(aes(xmin = (1-m1p_rg$min)*100, xmax = 100, ymin = -100, ymax = 0), fill="white", alpha = 0.008)
+	geom_rect(aes(xmin = (1-m1p_rg$min)*100, xmax = 100, ymin = -100, ymax = 0), fill="white", alpha = 0.008)+
+  annotate("text", x=50, y=-85, label="Compared to deterrent ITNs", size=3) 
 
 
 # arrange panels of figure 3
@@ -174,7 +178,8 @@ fig4_A <- ggplot(RTP.fit, aes(x=d.*100, y=redVC)) +
 	theme(axis.title.y = element_blank())+
 	theme(axis.title.x = element_blank()) +
 	theme(legend.text = element_markdown())+
-	geom_rect(aes(xmin = Dp_rg$max*100, xmax = 100, ymin = -100, ymax = 0), fill="white", alpha = 0.008)
+	geom_rect(aes(xmin = Dp_rg$max*100, xmax = 100, ymin = -100, ymax = 0), fill="white", alpha = 0.008)+
+  annotate("text", x=50, y=-85, label="Compared to inert ITNs", size=3) 
 
 # panel B
 p<- c(0.5,0.6,0.7)		      # preference for ITN protected human (against unprotected human) 
@@ -193,7 +198,8 @@ fig4_B <- ggplot(RTP.fit, aes(x=d.*100, y=redVC)) +
 	theme(axis.title.y = element_blank())+
 	theme(axis.title.x = element_blank())+
 	theme(legend.text = element_markdown())+
-	geom_rect(aes(xmin = Dp_rg$max*100, xmax = 100, ymin = -100, ymax = 0), fill="white", alpha = 0.008)
+	geom_rect(aes(xmin = Dp_rg$max*100, xmax = 100, ymin = -100, ymax = 0), fill="white", alpha = 0.008)+
+  annotate("text", x=50, y=-85, label="Compared to deterrent ITNs", size=3) 
 
 
 # arrange panels of figure 4
@@ -205,7 +211,7 @@ figure4 <- ggarrange(fig4_A + rremove("legend"),
 										 ncol = 2, nrow = 1)
 
 figure4 <- annotate_figure(figure4,
-													 bottom = text_grob("Diversion (%)"),
+													 bottom = text_grob("Escape behavior (%)"),
 													 left = text_grob(y_title, rot=90))
 
 figure4
@@ -239,7 +245,8 @@ fig5_A <- ggplot(RTP.fit, aes(x=(1-pi.)*100, y=redVC)) +
 	theme(axis.title.y = element_blank())+
 	theme(axis.title.x = element_blank())+
 	theme(legend.text = element_markdown())+
-	geom_rect(aes(xmin = (1-pi_rg$min)*100, xmax = 100, ymin = -100, ymax = 0), fill="white", alpha = 0.008)
+	geom_rect(aes(xmin = (1-pi_rg$min)*100, xmax = 100, ymin = -100, ymax = 0), fill="white", alpha = 0.008)+
+  annotate("text", x=50, y=-85, label="Compared to inert ITNs", size=3) 
 
 # panel B
 p<- c(0.5,0.6,0.7)		      # preference for ITN protected human (against unprotected human) 
@@ -258,7 +265,8 @@ fig5_B <- ggplot(RTP.fit, aes(x=(1-pi.)*100, y=redVC)) +
 	theme(axis.title.y = element_blank())+
 	theme(axis.title.x = element_blank())+
 	theme(legend.text = element_markdown())+
-	geom_rect(aes(xmin = (1-pi_rg$min)*100, xmax = 100, ymin = -100, ymax = 0), fill="white", alpha = 0.008)
+	geom_rect(aes(xmin = (1-pi_rg$min)*100, xmax = 100, ymin = -100, ymax = 0), fill="white", alpha = 0.008)+
+  annotate("text", x=50, y=-85, label="Compared to deterrent ITNs", size=3) 
 
 
 # arrange panels of figure 4
